@@ -2,7 +2,7 @@ def perform_operation(num1, num2, operation) :
     match operation:
         case "add":
             return num1 + num2
-        case "substract":
+        case "subtract":
             return num1 - num2
         case "multiply":
             return num1 * num2
@@ -12,4 +12,4 @@ def perform_operation(num1, num2, operation) :
             else:
                 return "Cannot divide by 0"
         case _ :
-            "Incorrect input"
+            return "Incorrect input"
