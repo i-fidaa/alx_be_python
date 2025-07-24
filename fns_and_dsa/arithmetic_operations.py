@@ -13,6 +13,3 @@ def perform_operation(num1, num2, operation) :
                 return "Cannot divide by 0"
         case _ :
             "Incorrect input"
-
-result = perform_operation(5, 3, "add")
-print(f"The result is {result}")
