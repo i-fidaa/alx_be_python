@@ -18,7 +18,10 @@ def main():
             pass
         elif choice == '2':
             item = input("Choose an item to remove: ").lower().strip()
-            shopping_list.remove(item)
+            if item in shopping_list:
+                shopping_list.remove(item)
+            else:
+                print(f"'{item}' is not in the shopping list.")
             # Prompt for and remove an item
             pass
         elif choice == '3':
