@@ -1,7 +1,4 @@
 def perform_operation(num1, num2, operation) :
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    operation = input("Enter the operation: ")
     match operation:
         case "add":
             return num1 + num2
@@ -17,5 +14,5 @@ def perform_operation(num1, num2, operation) :
         case _ :
             "Incorrect input"
 
-result = perform_operation()
+result = perform_operation(5, 3, "add")
 print(f"The result is {result}")
